@@ -47,32 +47,10 @@ include_once 'library/include/textpage.php';
                         <?php include './library/include/colnews.php'; ?>
                     </div>
                     <div class="col_w300">
-                        <h2><span>SERVIÇOS</span></h2>
-                        <div class="image_wrapper">
-                            <img width="240" height="110" src="library/images/templatemo_image_01.jpg" alt="Image01" /></div>
-                            <p>
-                                <em>Morbi sed nulla ac est cursus suscipit eu ac lectus. Curabitur  ullamcorper nibh nisi, sed eleifend dolor. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow"><strong>XHTML</strong></a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow"><strong>CSS</strong></a>.
-                                </em>
-                            </p>
-                        <ul class="tmo_list">
-                            <li>Duis bibendum diam et eros</li>
-                            <li>Etiam accumsan ante ac augue</li>
-                            <li>Nullam faucibus tortor in sem</li>
-                            <li>Phasellus cursus congue arcu</li>                        
-                        </ul>
-                        <div class="cleaner"></div>
-                        <div class="btn_more"><a href="services.php">Leia mais</a></div>
+                        <?php include './library/include/servicos.php'; ?>
                     </div>
                     <div class="col_w300 col_last">
-                        <h2><span>Sobre nós</span></h2>
-                        <div class="image_wrapper">
-                            <img width="240" height="110" src="library/images/templatemo_image_02.jpg" alt="Image 02" /></div>
-                            <p>
-                                <em>Etiam ut urna ante, ut pulvinar ante. Vivamus a metus quam. Aenean non eros nunc. 
-                                </em>
-                            </p>
-                            <p>Sailing is Free CSS Template provided by <strong>templatemo</strong> website. Feel free to download and use this template for your websites. Credits go to <a rel="nofollow" href="http://www.photovaco.com" target="_blank">Free Photos</a> for photos and <a rel="nofollow" href="http://www.brusheezy.com/brush/1400-24-Clouds" target="_blank">Milanda Design</a> for a Photoshop Brush. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac elit est, eget hendrerit erat.</p>
-                      <div class="btn_more"><a href="about.php">Leia mais</a></div>
+                        <?php include './library/include/sobre.php'; ?>
                   </div>
                     <div class="cleaner"></div>
                 </div>

@@ -44,42 +44,35 @@ include_once 'library/include/textpage.php';
                 </div> <!-- end of templatemo_slider -->
                 <div id="templatemo_content">
                     <div class="col_w600">
-                            <h2>Contact Information</h2>
-                            <p>Suspendisse sed odio ut mi auctor blandit. Duis luctus nulla metus, a vulputate mauris. Integer sed nisi sapien, ut gravida mauris. Nam et tellus libero. Cras purus libero, dapibus nec rutrum in, dapibus nec risus. Ut interdum mi sit amet magna feugiat auctor. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow"><strong>XHTML</strong></a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow"><strong>CSS</strong></a>.</p>
+                            <h2>Informações de contato</h2>
+                            <p>
+                                Entre contato com a ADSBD, conheça nossa instituição.
+                            </p>
                         <div class="cleaner_h30"></div>
                         <div class="col_w280 float_l">
-                            <h6>Location One</h6>
-                            144-366 Quisque ornare mi nec dolor, <br />
-                            Duis porta mi in est imperdiet, 11260<br />
-                            Aliquam lorem nibh<br /><br />
-                            Tel: 040-060-8800<br />
-                            Fax: 040-060-7700<br />
-                        </div>
-                        <div class="col_w280 float_r">
-                            <h6>Location Two</h6>
-                            288-355 Mauris bibendum nunc nisi, <br />
-                            Donec sit amet placerat justo, 13600<br />
-                            Siam a mollis tempor<br /><br />
-                            Tel: 020-040-3340<br />
-                            Fax: 020-040-6640<br />
+                            <h6>Endereço:</h6>
+                            Praça Olegário Maciel, 831 - Centro<br />
+                            Bom Despacho - MG<br />
+                            CEP: 35600-000<br /><br />
+                            Tel: +55 - 37-3521-3275<br />
                         </div>
                         <div class="cleaner_h50"></div>
                         <div id="contact_form">
-                            <h4>Quick Contact Form</h4>
+                            <h4>Enviar um e-mail:</h4>
                             <form method="post" name="contact" action="#">
                                 <div class="col_w280 float_l">
-                                    <label for="author">Name:</label> <input type="text" id="author" name="author" class="required input_field" />
+                                    <label for="author">Name:</label> <input type="text" id="author" name="nome" class="required input_field" />
                                     <div class="cleaner_h10"></div>
                                     <label for="email">Email:</label> <input type="text" id="email" name="email" class="validate-email required input_field" />
                                     <div class="cleaner_h10"></div>
-                                    <label for="subject">Subject:</label> <input type="text" name="subject" id="subject" class="input_field" />
+                                    <label for="subject">Assunto:</label> <input type="text" name="assunto" id="subject" class="input_field" />
                                     <div class="cleaner_h10"></div>
                                 </div>						
                                 <div class="col_w280 float_r">
-                                    <label for="text">Message:</label> <textarea id="text" name="text" rows="0" cols="0" class="required"></textarea>
+                                    <label for="text">Mensagem:</label> <textarea id="text" name="text" rows="0" cols="0" class="required"></textarea>
                                     <div class="cleaner_h10"></div>
-                                    <input type="submit" class="submit_btn float_l" name="submit" id="submit" value="Send" />
-                                    <input type="reset" class="submit_btn float_r" name="reset" id="reset" value="Reset" />
+                                    <input type="submit" class="submit_btn float_l" name="submit" id="submit" value="Enviar" />
+                                    <input type="reset" class="submit_btn float_r" name="reset" id="reset" value="Limpar" />
                                 </div>
                             </form>
                         </div>

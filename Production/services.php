@@ -94,15 +94,7 @@ include_once 'library/include/textpage.php';
                         </div>      
                     </div>
                     <div class="col_w300 col_last">
-                        <h2><span>Sobre nós</span></h2>
-                        <div class="image_wrapper">
-                            <img width="240" height="110" src="library/images/templatemo_image_02.jpg" alt="Image 02" /></div>
-                            <p>
-                                <em>Etiam ut urna ante, ut pulvinar ante. Vivamus a metus quam. Aenean non eros nunc. 
-                                </em>
-                            </p>
-                            <p>Sailing is Free CSS Template provided by <strong>templatemo</strong> website. Feel free to download and use this template for your websites. Credits go to <a rel="nofollow" href="http://www.photovaco.com" target="_blank">Free Photos</a> for photos and <a rel="nofollow" href="http://www.brusheezy.com/brush/1400-24-Clouds" target="_blank">Milanda Design</a> for a Photoshop Brush. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac elit est, eget hendrerit erat.</p>
-                      <div class="btn_more"><a href="about.php">Leia mais</a></div>
+                        <?php include './library/include/sobre.php'; ?>
                     </div>
                     <div class="cleaner"></div>
                 </div>

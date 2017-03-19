@@ -6,7 +6,7 @@ include_once 'library/include/textpage.php';
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-        <title><?php echo $titleSub;?>Notícias</title>
+        <title><?php echo $titleSub;?>Not&iacute;cias</title>
         <meta name="keywords" content="" />
         <meta name="description" content="" />
         <link href="library/css/templatemo_style.css" rel="stylesheet" type="text/css" />
@@ -48,15 +48,20 @@ include_once 'library/include/textpage.php';
                 <div id="templatemo_content">
                     <div class="col_w600">
                         <div class="news_box">
-                            <h2>Morbi sed nulla ac est cursus </h2>		
-                            <div class="news_meta">May 30th, 2048 | <a href="#">Web Templates</a> by <a href="#">George</a></div>      
-                            <img src="library/images/templatemo_image_03.jpg" alt="TemplatemoImage03" />
-                            <p>Vestibulum auctor euismod mi et tincidunt. Mauris  vitae ipsum diam, sagittis tempor velit. Sed fringilla accumsan mi, et gravida mauris elementum ac. Praesent vel felis id lectus bibendum tempor sed sagittis tellus. Morbi mattis, nunc at euismod luctus, lacus neque volutpat est, at pharetra lacus erat nec mauris. Vivamus id quam lacus, et vestibulum nisi. Vivamus eu ipsum eget nulla posuere porttitor. Mauris felis mauris, pretium venenatis laoreet eu, ornare nec lorem. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow"><strong>XHTML</strong></a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow"><strong>CSS</strong></a>.</p>
+                            <h2>A&ccedil;&amacr;o entre amigos</h2>		
+                            <div class="news_meta">Novembro, 2015 | <a href="#">ADSBD</a> by <a href="#">Lelis</a></div>      
+                            <img src="library/img/carro.jpg" alt="Carro" />
+                            <p>
+                                Estamos fazendo A&ccedil;&amacr;o Entre Amigos para adquirir os equipamentos que ainda buscamos em Divin&oacute;polis, o que causa transtornos nas coletas realizadas de 15 em 15 dias, em Bom Despacho. Com a aquisi&ccedil;&amacr;o destes equipamentos poderemos ter mais dias de coleta, aumentando o n&uacute;mero de doa&ccedil;&omacr;es, atendendo doadores em pelo menos um s&aacute;bado ao m&ecirc;s, e auxiliar cidades vizinhas diminuindo a dist&acirc;ncia das viagens, que hoje s&amacr;o em Divin&oacute;polis. 
+                                O ve&iacute;culo foi doado pela C&acirc;mara Municipal de Bom Despacho, com apoio da Prefeitura.  Cada bilhete tem o valor de R$25,00 (vinte e cinco reais) concorrendo ao sorteio de Ford Fiesta - Sedan 2012 e servir&aacute; como ingresso no Evento para realiza&ccedil;&amacr;o do sorteio ao vivo.
+                                Se 5.000 (cinco mil) pessoas comprar um ingresso muitas e muitas vidas ser&amacr;o salvas, "Pode ser at&eacute; a sua".
+                            </p>
                           <div class="cleaner_h20"></div>
-                          <div class="float_l"><a href="#" class="comment">512 comments</a></div> 
-                          <div class="btn_more float_r"><a href="#">More</a></div>  
+                          <div class="float_l"><a href="#" class="comment">0 Coment&aacute;rios</a></div> 
+                          <div class="btn_more float_r"><a href="#">Mais</a></div>  
                             <div class="cleaner"></div>
                         </div>
+                        <!--
                         <div class="news_box news_box_last">
                             <h2> Donec et purus velit, eget euismod</h2>		
                             <div class="news_meta">May 15th, 2048 | <a href="#">User Interfaces</a> by <a href="#">Steven</a></div>  
@@ -67,23 +72,10 @@ include_once 'library/include/textpage.php';
                             <div class="btn_more float_r"><a href="#">More</a></div>  
                             <div class="cleaner"></div>
                         </div>     
+                        -->
                     </div>
                     <div class="col_w300 col_last">
-                        <h2><span>SERVIÇOS</span></h2>
-                        <div class="image_wrapper">
-                            <img width="240" height="110" src="library/images/templatemo_image_01.jpg" alt="Image01" /></div>
-                            <p>
-                                <em>Morbi sed nulla ac est cursus suscipit eu ac lectus. Curabitur  ullamcorper nibh nisi, sed eleifend dolor. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow"><strong>XHTML</strong></a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow"><strong>CSS</strong></a>.
-                                </em>
-                            </p>
-                        <ul class="tmo_list">
-                            <li>Duis bibendum diam et eros</li>
-                            <li>Etiam accumsan ante ac augue</li>
-                            <li>Nullam faucibus tortor in sem</li>
-                            <li>Phasellus cursus congue arcu</li>                        
-                        </ul>
-                        <div class="cleaner"></div>
-                        <div class="btn_more"><a href="services.php">Leia mais</a></div>
+                        <?php include './library/include/servicos.php'; ?>
                     </div>
                     <div class="cleaner"></div>
                 </div>
