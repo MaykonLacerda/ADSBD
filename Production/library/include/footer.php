@@ -11,7 +11,7 @@
     </div>
 
     <div class="col_w220">
-        <h5>Outras p·ginas</h5>
+        <h5>Outras p√°ginas</h5>
         <ul class="tmo_list">
             <li><a href="index.php">Home</a></li>
             <li><a href="services.php">Servi&ccedil;os</a></li>
@@ -49,5 +49,5 @@
 </div> 
 <!-- end of footer -->
 <div id="templatemo_copyright">
-    Copyright © <?php echo date("Y")?> <a href="index.php">Associa&ccedil;„o dos doadores de sangue de Bom Despacho - ADSBD</a> | Designed by <a rel="nofollow" href="http://www.templatemo.com" target="_parent">Free Templates</a>
+    Copyright  <?php echo date("Y")?> <a href="index.php">Associa&ccedil;√£o dos doadores de sangue de Bom Despacho - ADSBD</a> | Designed by <a rel="nofollow" href="http://www.templatemo.com" target="_parent">Free Templates</a>
 </div>

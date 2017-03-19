@@ -44,14 +44,14 @@ include_once 'library/include/textpage.php';
                 </div> <!-- end of templatemo_slider -->
                 <div id="templatemo_content">
                     <div class="col_w600">
-                            <h2>Informações de contato</h2>
+                            <h2>InformaÃ§Ãµes de contato</h2>
                             <p>
-                                Entre contato com a ADSBD, conheça nossa instituição.
+                                Entre contato com a ADSBD, conheÃ§a nossa instituiÃ§Ã£o.
                             </p>
                         <div class="cleaner_h30"></div>
                         <div class="col_w280 float_l">
-                            <h6>Endereço:</h6>
-                            Praça Olegário Maciel, 831 - Centro<br />
+                            <h6>EndereÃ§o:</h6>
+                            PraÃ§a OlegÃ¡rio Maciel, 831 - Centro<br />
                             Bom Despacho - MG<br />
                             CEP: 35600-000<br /><br />
                             Tel: +55 - 37-3521-3275<br />

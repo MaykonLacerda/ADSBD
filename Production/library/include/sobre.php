@@ -3,10 +3,10 @@
                             <img width="240" height="110" src="library/img/sobre.jpg" alt="Sobre a ADSBD" title="Sobre a ADSBD" /></div>
                             <p>
                                 <em>
-                                    A ADSBD (Associação dos doadores de sangue de Bom Despacho).
+                                    A ADSBD (AssociaÃ§Ã£o dos doadores de sangue de Bom Despacho).
                                 </em>
                             </p>
                             <p>
-                                é uma entidade sem fins lucrativos que visa buscar doadores volutários e promover reposição de estoque de bolsas de sangue em hospitaveis públicos.
+                            Ã‰ uma entidade sem fins lucrativos que visa buscar doadores volutÃ¡rios e promover reposiÃ§Ã£o de estoque de bolsas de sangue em hospitaveis pÃºblicos.
                             </p>
                       <div class="btn_more"><a href="about.php">Leia mais</a></div>
