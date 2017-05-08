@@ -8,8 +8,8 @@
 
 <div class="sb_news_box">
     <img src="library/images/templatemo_image_05.jpg" alt="Image 05" />
-    <h6><a href="news_2.php">Semana nacional do doador volunt&aacute;rio 2015</a></h6>
-    Veja aqui a programa&ccedil;&amacr;o da semana nacional do doador volunt&aacute;rio.
+    <h6><a href="news_3.php">Coletas de sangue 1º semestre</a></h6>
+        Veja aqui as datas.
     <div class="cleaner"></div>
 </div>
 <!--
@@ -24,6 +24,6 @@
     <h6><a href="#">Etiam a enim id sapien</a></h6>
     Praesent ultrices nunc sit amet nulla vestibulum pellentesque.
     <div class="cleaner"></div>
-</div>
+</div>  
 <div class="btn_more"><a href="news.php">Leia mais</a></div>
 -->

@@ -1,10 +1,10 @@
 <?php
-//Textos da p�gina
+//Textos da p�gina
 $dataAno = date("Y");
 # TITLE
-$title = "ADSBD - Associa&ccdil&ccedil;&amacr;o dos doadores de sangue de Bom Despacho";
+$title = "ADSBD - Associação dos doadores de sangue de Bom Despacho";
 $titleSub = "ADSB - ";
 #Slogan
-$slogam = "&Uacute;nidos pela vida!";
+$slogam = "Únidos pela vida!";
 ?>
 

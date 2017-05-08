@@ -52,9 +52,77 @@ include_once 'library/include/textpage.php';
                             <div class="news_meta">Maio, 2017 | <a href="#">ADSBD</a> Por <a href="#">ADSBD</a></div>      
                             <img src="library/img/carro.jpg" alt="Carro" />
                             <p>
-                                Estamos fazendo Ação Entre Amigos para adquirir os equipamentos que ainda buscamos em Divinópolis, o que causa transtornos nas coletas realizadas de 15 em 15 dias, em Bom Despacho. Com a aquisição destes equipamentos poderemos ter mais dias de coleta, aumentando o número de doações, atendendo doadores em pelo menos um sábado ao mês, e auxiliar cidades vizinhas diminuindo a distância das viagens, que hoje são em Divinópolis. 
-                                O veículo foi doado pela Câmara Municipal de Bom Despacho, com apoio da Prefeitura.  Cada bilhete tem o valor de R$25,00 (vinte e cinco reais) concorrendo ao sorteio de Ford Fiesta - Sedan 2012 e servirá como ingresso no Evento para realização do sorteio ao vivo.
-                                Se 5.000 (cinco mil) pessoas comprar um ingresso muitas e muitas vidas serão salvas, “Pode ser até a sua”
+                            <div align="center">
+                                <table border="1" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td width="432" colspan="2">
+                                                <p align="center">
+                                                    ADSBD – Associação dos Doadores de Sangue de Bom
+                                                    Despacho
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="432" colspan="2">
+                                                <p align="center">
+                                                    LOCAL: PRAÇA OLEGÁRIO MACIEL, 831 – CENTRO (SEDE DA
+                            ADSBD), HORÁRIO DAS COLETAS: DE 08 ÀS 13 HORAS.<strong>Agende sua doação: 3521-3275/ </strong>                        <strong>99807-0603</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="55" rowspan="6">
+                                                <p align="center">
+                                                    <strong>1º Semestre </strong>
+                                                    <strong>2017</strong>
+                                                    <strong></strong>
+                                                </p>
+                                            </td>
+                                            <td width="377">
+                                                <p align="center">
+                                                    <strong>MESES/DATAS</strong>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="377">
+                                                <p align="center">
+                                                    FEVEREIRO – 07 E 21
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="377">
+                                                <p align="center">
+                                                    MARÇO – 07 E 21
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="377">
+                                                <p align="center">
+                                                    ABRIL – 04 E 18
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="377">
+                                                <p align="center">
+                                                    MAIO – 02, 16 E 30
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="377">
+                                                <p align="center">
+                                                    JUNHO – 13 E 27
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             </p>
                           <div class="cleaner_h20"></div>
                           <div class="float_l"><a href="#" class="comment">0 Coment&aacute;rios</a></div> 
