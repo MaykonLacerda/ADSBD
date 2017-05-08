@@ -50,7 +50,6 @@ include_once 'library/include/textpage.php';
                         <div class="news_box">
                             <h2>A&ccedil;&amacr;o entre amigos</h2>		
                             <div class="news_meta">Maio, 2017 | <a href="#">ADSBD</a> Por <a href="#">ADSBD</a></div>      
-                            <img src="library/img/carro.jpg" alt="Carro" />
                             <p>
                             <div align="center">
                                 <table border="1" cellspacing="0" cellpadding="0">

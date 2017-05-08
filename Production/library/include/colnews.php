@@ -7,7 +7,7 @@
 </div>
 
 <div class="sb_news_box">
-    <img src="library/images/templatemo_image_05.jpg" alt="Image 05" />
+   
     <h6><a href="news_3.php">Coletas de sangue 1º semestre</a></h6>
         Veja aqui as datas.
     <div class="cleaner"></div>
