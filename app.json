@@ -1,0 +1,13 @@
+{
+  "apps": [
+    {
+      "name": "adsbd.com.br",
+      "script": "npm",
+      "args": "start",
+      "env": {
+        "NODE_ENV": "production",
+        "NODE_PORT": "7027"
+      }
+    }
+  ]
+}
