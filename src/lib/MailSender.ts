@@ -5,7 +5,7 @@ import { Logger } from './Logger'
 
 export class MailSender {
   private transporter: Mail
-  private from = 'System <never-replay@meugasja.com>'
+  private from = 'System <never-replay@adsbd.com.br>'
 
   constructor() {
     this.transporter = createTransport({

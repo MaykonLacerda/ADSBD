@@ -8,13 +8,21 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "skipFiles": ["<node_internals>/**"],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
       "program": "${workspaceFolder}/dist/server.js",
       "cwd": "${workspaceFolder}",
       "preLaunchTask": "tsc: build - tsconfig.json",
-      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "outFiles": [
+        "${workspaceFolder}/dist/**/*.js"
+      ],
       "env": {
-        "NODE_ENV": "development"
+        "NODE_ENV": "development",
+        "NODE_MAIL_HOST": "mail.cognitionsystem.com.br",
+        "NODE_MAIL_PORT": "587",
+        "NODE_MAIL_USER": "no-replay@adsbd.com.br",
+        "NODE_MAIL_PASS": "m200k9*12345"
       }
     }
   ]

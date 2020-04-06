@@ -6,7 +6,11 @@
       "args": "start",
       "env": {
         "NODE_ENV": "production",
-        "NODE_PORT": "7027"
+        "NODE_PORT": "7027",
+        "NODE_MAIL_HOST": "mail.cognitionsystem.com.br",
+        "NODE_MAIL_PORT": "587",
+        "NODE_MAIL_USER": "no-replay@adsbd.com.br",
+        "NODE_MAIL_PASS": "m200k9*12345"
       }
     }
   ]

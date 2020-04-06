@@ -4,8 +4,9 @@ import cors from 'cors'
 import express from 'express'
 import helmet from 'helmet'
 import methodOverride from 'method-override'
-// import { MailSender } from './MailSender'
+import { MailSender } from './MailSender'
 import { Ticks } from './Ticks'
+import { sendMailRouter } from '../app/routers/sendMailRouter'
 
 export class Express {
   public port: number
@@ -24,8 +25,9 @@ export class Express {
     app.use(cors())
     app.use(helmet())
     app.use(compression())
-    // const mailSender = new MailSender()
-    // mailSender.testConnectingMailServer()
+    app.use('/api', new sendMailRouter().r)
+    const mailSender = new MailSender()
+    mailSender.testConnectingMailServer()
     const ticks = new Ticks()
     ticks.init()
     this.app = app
