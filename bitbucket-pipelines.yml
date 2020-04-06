@@ -1,34 +1,29 @@
-# This is a sample build configuration for JavaScript.
-# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
-# Only use spaces to indent your .yml configuration.
-# -----
-# You can specify a custom docker image from Docker Hub as your build environment.
-#image: node:10.15.3
+image: node:12
 
-#pipelines:
-#  branches:
-#    master:
-#      - step:
-#          name: production
-#          deployment: Production
-#          caches:
-#            - node
-#          script: # Modify the commands below to build your repository.
-#            - npm install
-#            - npm run build
-#            - pipe: atlassian/rsync-deploy:0.2.1
-#              variables:
-#                SSH_KEY: $SSH_KEY
-#                SSH_PORT: 145
-#                USER: "root"
-#                SERVER: "191.101.227.226"
-#                REMOTE_PATH: "/home/cognitionsystem/adsbd/"
-#                LOCAL_PATH: "./"
-#                EXTRA_ARGS: "--exclude=.git"
-#            - pipe: atlassian/ssh-run:0.2.1
-#              variables:
-#                SSH_USER: "root"
-#                SERVER: "191.101.227.226"
-#                COMMAND: "pm2 restart adsbd.com.br"
-#                PORT: "145"
-#                SSH_KEY: $SSH_KEY
+pipelines:
+  branches:
+    master:
+      - step:
+          name: production
+          deployment: Production
+          caches:
+            - node
+          script:
+            - npm install
+            - npm run build
+            - pipe: atlassian/rsync-deploy:0.2.1
+              variables:
+                SSH_KEY: $SSH_KEY
+                SSH_PORT: 145
+                USER: "root"
+                SERVER: "191.101.227.226"
+                REMOTE_PATH: "/home/cognitionsystem/adsbd/"
+                LOCAL_PATH: "./"
+                EXTRA_ARGS: "--exclude=.git"
+            - pipe: atlassian/ssh-run:0.2.1
+              variables:
+                SSH_USER: "root"
+                SERVER: "191.101.227.226"
+                COMMAND: "pm2 restart adsbd.com.br"
+                PORT: "145"
+                SSH_KEY: $SSH_KEY
