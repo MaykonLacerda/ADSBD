@@ -16,14 +16,14 @@ pipelines:
                 SSH_KEY: $SSH_KEY
                 SSH_PORT: 145
                 USER: "root"
-                SERVER: "191.101.227.226"
+                SERVER: "181.214.242.48"
                 REMOTE_PATH: "/home/cognitionsystem/adsbd/"
                 LOCAL_PATH: "./"
                 EXTRA_ARGS: "--exclude=.git"
             - pipe: atlassian/ssh-run:0.2.1
               variables:
                 SSH_USER: "root"
-                SERVER: "191.101.227.226"
+                SERVER: "181.214.242.48"
                 COMMAND: "pm2 restart adsbd.com.br"
                 PORT: "145"
                 SSH_KEY: $SSH_KEY
