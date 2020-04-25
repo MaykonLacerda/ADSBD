@@ -24,7 +24,7 @@ angular.module('angularApp', [
 
   .controller('recapCtrl',['vcRecaptchaService','$http',function(vcRecaptchaService,$http){
     var vm = this;
-    vm.publicKey = "6LcwcewUAAAAAGkpnnrK9Bg5X0mhGJi5rfyR0lUa";
+    vm.publicKey = "6LehQe4UAAAAAK-WG5VL8bjeJiPlnsXmFNJzlOSb";
 
     vm.sendMessage = function(){
 
@@ -37,7 +37,7 @@ angular.module('angularApp', [
                 'name':vm.name,
                 'email':vm.email,
                 'phone':vm.phone,
-                'email':vm.email,
+                'mensage':vm.mensage,
                 'g-recaptcha-response':vcRecaptchaService.getResponse()  //send g-captcah-response to our server
             }
 
