@@ -49,11 +49,11 @@ angular.module('angularApp', [
 
 /* MAKE AJAX REQUEST to our server with g-captcha-string */
                 $http.post('/api/sendmail',post_data).success(function(response){
-                if(response.error === 0){
-                    alert("Successfully verified and signed up the user");
-                }else{
-                    alert("User verification failed");
-                }
+                  vm.name = '';
+                  vm.email = '';
+                  vm.phone = '';
+                  vm.mensage = '';
+                  alert('Email enviado com sucesso');
             })
             .error(function(error){
               alert(error);

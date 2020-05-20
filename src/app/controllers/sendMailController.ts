@@ -11,6 +11,6 @@ export class SendMailController {
     Telefone: ${phone}<br />
     <p>${message}</p>
     `
-    return mail.sendHtml('', 'Contato via website', messageHtml, [])
+    return mail.sendHtml('maykonalvslacerda@gmail.com', 'Contato via website', messageHtml, [])
   }
 }
