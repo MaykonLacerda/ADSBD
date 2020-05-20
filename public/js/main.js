@@ -18,6 +18,11 @@ angular.module('angularApp', [
       templateUrl: 'partials/home/home.html',
       controller: 'HomeController'
     })
+
+    $routeProvider.when('/donate', {
+      templateUrl: 'partials/donate/donate.html',
+      controller: 'DonateController'
+    })
     $routeProvider.otherwise({ redirectTo: '/home' })
 
   })
@@ -43,7 +48,7 @@ angular.module('angularApp', [
 
 
 /* MAKE AJAX REQUEST to our server with g-captcha-string */
-                $http.post('http://sitename.com/api/signup',post_data).success(function(response){
+                $http.post('/api/sendmail',post_data).success(function(response){
                 if(response.error === 0){
                     alert("Successfully verified and signed up the user");
                 }else{
@@ -51,7 +56,7 @@ angular.module('angularApp', [
                 }
             })
             .error(function(error){
-
+              alert(error);
             })
         }
     }

@@ -1,5 +1,7 @@
-angular.module('angularApp').controller('HomeController', function (
-  $scope
-) {
-  $scope.name = "Janiel"
+angular.module('angularApp')
+
+.controller('HomeController', function ($scope) {
+
+     
+
 })
