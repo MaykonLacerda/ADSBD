@@ -6,7 +6,7 @@ angular.module('angularApp', [
   'ngMaterial',
   'ngMessages',
   'vcRecaptcha'
-])  
+])
 
   .config(($routeProvider, $httpProvider, $mdDateLocaleProvider) => {
     $mdDateLocaleProvider.formatDate = function (date) {
@@ -27,37 +27,37 @@ angular.module('angularApp', [
 
   })
 
-  .controller('recapCtrl',['vcRecaptchaService','$http',function(vcRecaptchaService,$http){
+  .controller('recapCtrl', ['vcRecaptchaService', '$http', function (vcRecaptchaService, $http) {
     var vm = this;
     vm.publicKey = "6LehQe4UAAAAAK-WG5VL8bjeJiPlnsXmFNJzlOSb";
 
-    vm.sendMessage = function(){
+    vm.sendMessage = function () {
 
-     /* vcRecaptchaService.getResponse() gives you the g-captcha-response */
+      /* vcRecaptchaService.getResponse() gives you the g-captcha-response */
 
-        if(vcRecaptchaService.getResponse() === ""){ //if string is empty
-            alert("Por favor, resolva o captcha!")
-        }else {
-            var post_data = {  //prepare payload for request
-                'name':vm.name,
-                'email':vm.email,
-                'phone':vm.phone,
-                'mensage':vm.mensage,
-                'g-recaptcha-response':vcRecaptchaService.getResponse()  //send g-captcah-response to our server
-            }
-
-
-/* MAKE AJAX REQUEST to our server with g-captcha-string */
-                $http.post('/api/sendmail',post_data).success(function(response){
-                  vm.name = '';
-                  vm.email = '';
-                  vm.phone = '';
-                  vm.mensage = '';
-                  alert('Email enviado com sucesso');
-            })
-            .error(function(error){
-              alert(error);
-            })
+      if (vcRecaptchaService.getResponse() === "") { //if string is empty
+        alert("Por favor, resolva o captcha!")
+        
+      } else {
+        var post_data = {  //prepare payload for request
+          'name': vm.name,
+          'email': vm.email,
+          'phone': vm.phone,
+          'message': vm.message,
+          'g-recaptcha-response': vcRecaptchaService.getResponse()  //send g-captcah-response to our server
         }
+
+        /* MAKE AJAX REQUEST to our server with g-captcha-string */
+        $http.post('/api/sendmail', post_data).success(function (response) {
+          vm.name = '';
+          vm.email = '';
+          vm.phone = '';
+          vm.message = '';
+          alert('Email enviado com sucesso');
+        })
+          .error(function (error) {
+            alert(error);
+          })
+      }
     }
-}])
+  }])
