@@ -14,7 +14,7 @@ export class Express {
 
   constructor() {
     const app = express()
-    this.port = parseInt(process.env.NODE_PORT, 10) || 7022
+    this.port = parseInt(process.env.NODE_PORT, 10) || 80
     app.set('view engine', 'pug')
     app.set('views', './public/views')
     app.set('port', this.port)

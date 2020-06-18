@@ -26,38 +26,3 @@ angular.module('angularApp', [
     $routeProvider.otherwise({ redirectTo: '/home' })
 
   })
-
-  .controller('recapCtrl', ['vcRecaptchaService', '$http', function (vcRecaptchaService, $http) {
-    var vm = this;
-    vm.publicKey = "6LehQe4UAAAAAK-WG5VL8bjeJiPlnsXmFNJzlOSb";
-
-    vm.sendMessage = function () {
-
-      /* vcRecaptchaService.getResponse() gives you the g-captcha-response */
-
-      if (vcRecaptchaService.getResponse() === "") { //if string is empty
-        alert("Por favor, resolva o captcha!")
-        
-      } else {
-        var post_data = {  //prepare payload for request
-          'name': vm.name,
-          'email': vm.email,
-          'phone': vm.phone,
-          'message': vm.message,
-          'g-recaptcha-response': vcRecaptchaService.getResponse()  //send g-captcah-response to our server
-        }
-
-        /* MAKE AJAX REQUEST to our server with g-captcha-string */
-        $http.post('/api/sendmail', post_data).success(function (response) {
-          vm.name = '';
-          vm.email = '';
-          vm.phone = '';
-          vm.message = '';
-          alert('Email enviado com sucesso');
-        })
-          .error(function (error) {
-            alert(error);
-          })
-      }
-    }
-  }])

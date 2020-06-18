@@ -103,39 +103,51 @@
         <h3 class="section-subheading text-muted">Envie sua mensagem</h3>
       </div>
     </div>
-    <div class="row" ng-controller="recapCtrl as recap">
+    <div class="row">
       <div class="col-lg-12">
-        <form id="contactForm" name="sentMessageForm" novalidate="novalidate" ng-submit="recap.sendMessage()">
+        <div class="bg bg-danger" ng-if="showDanger">Problema ao enviar e-mail!</div>
+        <div class="bg bg-warning" ng-if="showWarning">Preencha todos os campos antes de enviar o e-mail!</div>
+        <div class="bg bg-success" ng-if="showSuccess">E-mail enviado com sucesso</div>
+        <form id="contactForm" name="sentMessageForm" novalidate="novalidate" ng-submit="sendMessage()">
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
                 <input class="form-control" id="name" name="name" type="text" placeholder="Seu Nome *" required="required"
-                  data-validation-required-message="Por favor, insira seu nome.">
+                  data-validation-required-message="Por favor, insira seu nome." ng-model="name">
                 <p class="help-block text-danger"></p>
               </div>
               <div class="form-group">
                 <input class="form-control" id="email" name="email" type="email" placeholder="Seu E-mail *" required="required"
-                  data-validation-required-message="Por favor, insira seu e-mail.">
+                  data-validation-required-message="Por favor, insira seu e-mail." ng-model="email">
                 <p class="help-block text-danger"></p>
               </div>
               <div class="form-group">
-                <input class="form-control" id="phone" name="phone" type="tel" placeholder="Seu Telefone *" required="required"
-                  data-validation-required-message="Por favor, insira seu telefone.">
+                <input class="form-control" id="phone" name="phone" type="phone" placeholder="Seu Telefone *" required="required"
+                  data-validation-required-message="Por favor, insira seu telefone." ng-model="phone">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <textarea class="form-control" id="message" name="message" placeholder="Sua Mensagem *" required="required"
+                <textarea class="form-control" id="message" name="message" ng-model="message" placeholder="Sua Mensagem *" required="required"
                   data-validation-required-message="Por favor, insira sua mensagem."></textarea>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="clearfix"></div>
             <div class="col-lg-12 text-center">
-              <div id="success"></div>
-              <div vc-recaptcha key="'6LehQe4UAAAAAK-WG5VL8bjeJiPlnsXmFNJzlOSb'" ng-model="myFields.myRecaptchaResponse"></div>
-              <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar
+              <div ng-model="form.recaptcha" 
+                    size="captcha.size" 
+                    vc-recaptcha theme="'light'" 
+                    key="captcha.modelKey" 
+                    on-create="captcha.setWidgetId(widgetId)"
+                    on-success="captcha.setResponse(response)" 
+                    on-expire="captcha.cbExpiration()" 
+                    required>
+              </div>
+              
+              <p ng-show="!form.recaptcha" class="error">Please resolve the captcha</p>
+              <button ng-if="showButtonSentEmail" id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar
                 Mensagem
               </button>
             </div>
