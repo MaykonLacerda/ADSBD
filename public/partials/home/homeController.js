@@ -23,6 +23,7 @@ angular.module('angularApp').controller('HomeController', function ($scope, vcRe
     },
     cbExpiration: function () {
       vcRecaptchaService.reload($scope.captcha.widgetId);
+      $scope.showButtonSentEmail = false
       $scope.captcha.response = null;
     }
   }
@@ -32,7 +33,7 @@ angular.module('angularApp').controller('HomeController', function ($scope, vcRe
       $scope.showWarning = true
       return false
     }
-    if ($scope.email === undefined || $scope.email.length === 0 || $scope.email.indexOf('@') === -1  || $scope.email.indexOf('.') === -1) {
+    if ($scope.email === undefined || $scope.email.length === 0 || $scope.email.indexOf('@') === -1 || $scope.email.indexOf('.') === -1) {
       $scope.showWarning = true
       return false
     }
@@ -43,7 +44,7 @@ angular.module('angularApp').controller('HomeController', function ($scope, vcRe
     if ($scope.message.length === 0 && $scope.message.length > 5000) {
       $scope.showWarning = true
       return false
-      
+
     }
     return true
   }

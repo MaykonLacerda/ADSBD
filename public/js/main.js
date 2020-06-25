@@ -19,10 +19,16 @@ angular.module('angularApp', [
       controller: 'HomeController'
     })
 
-    $routeProvider.when('/donate', {
-      templateUrl: 'partials/donate/donate.html',
-      controller: 'DonateController'
+    $routeProvider.when('/requeriments', {
+      templateUrl: 'partials/requeriments/requeriments.html',
+      controller: 'requerimentsController'
     })
+
+    $routeProvider.when('/seeTimes', {
+      templateUrl: 'partials/seeTimes/seeTimes.html',
+      controller: 'seeTimesController'
+    })
+    
     $routeProvider.otherwise({ redirectTo: '/home' })
 
   })
